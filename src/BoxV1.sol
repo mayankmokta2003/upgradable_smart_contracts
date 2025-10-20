@@ -10,7 +10,7 @@ contract BoxV1 is Initializable, UUPSUpgradeable ,OwnableUpgradeable{
     uint256 public number;
 
     constructor() {
-        _disableInitializers(); //this says constructor dont do anything
+        Initializable._disableInitializers(); //this says constructor dont do anything
     }
 
     function initialize() public initializer{
